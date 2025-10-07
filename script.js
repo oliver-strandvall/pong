@@ -123,8 +123,9 @@ function updateGame(timestamp) {
     ctx.font = "50px Arial";
     ctx.fillStyle = "rgba(0, 0, 0, 1)";
 
-    ctx.fillText(playerpoints, 350, 50);
-    ctx.fillText(botpoints, 450, 50);
+    ctx.fillText(playerpoints, canvas.width / 2 - 110, 50);
+    ctx.fillRect(canvas.width / 2, 5, 10, 50)
+    ctx.fillText(botpoints, canvas.width / 2 + 100, 50);
 
     ball.x = ball.x + ball.vx
     ball.y = ball.y + ball.vy
